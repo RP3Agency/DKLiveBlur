@@ -69,7 +69,7 @@
 }
 
 - (UIImage *)blurryImage:(UIImage *)image withBlurLevel:(CGFloat)blur {
-    if ((blur < 0.0f) || (blur > 1.0f)) {
+    if (blur < 0.0f) {
         blur = 0.5f;
     }
     
